@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <h1 class="cover-heading">Covid Dashboard</h1>
+        <table id="Covid Dashboard">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Rank</th>
+            </tr>
+
+            <tbody>
+                <% covidData.forEach((m)=> { %>
+                    <tr>
+                        <td>
+                            <%= m.id %>
+                        </td>
+                        <td>
+                            <%= m.name %>
+                        </td>
+                        <td>
+                            <%= m.rank %>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>
